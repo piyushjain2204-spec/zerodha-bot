@@ -11,3 +11,27 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* src/App.css or your main CSS file */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  /* wrap cards on smaller screens */
+  justify-content: center;
+  /* center cards */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  flex: 1 1 300px;
+  /* minimum width 300px, grows to fill */
+  max-width: 100%;
+  /* prevents overflow */
+  box-sizing: border-box;
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
